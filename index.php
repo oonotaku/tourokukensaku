@@ -43,7 +43,9 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
     <h1>登録一覧</h1>
-
+        <nav>
+        <a href="touroku.php">登録ページへ</a>
+        </nav>
     <!-- 検索フォーム -->
     <form method="get" action="index.php">
         <input type="text" name="keyword" placeholder="会社名で検索" value="<?php echo htmlspecialchars($keyword); ?>">
